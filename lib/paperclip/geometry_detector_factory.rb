@@ -19,7 +19,7 @@ module Paperclip
         Paperclip.run(
           "identify",
           "-format '%wx%h,#{orientation}' :file", {
-            :file => "#{path}[0]"
+            :file => "#{path}"
           }, {
             :swallow_stderr => true
           }
